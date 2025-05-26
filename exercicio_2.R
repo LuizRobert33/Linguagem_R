@@ -56,3 +56,18 @@ cat("Variância:", variancia, "\n")
 cat("Desvio padrão:", desvio_padrao, "\n")
 cat("Coeficiente de variação (%):", coef_var, "\n")
 cat("Distância interquartil:", distancia_interquartil, "\n")
+
+
+# Criando uma tabela de exemplo
+tabela <- c(20, 35, 45)  # valores de cada categoria
+
+# Gráfico de barras
+barplot(tabela,
+        xlab = "Categorias",     # rótulo do eixo x
+        ylab = "Percentagem (%)",# rótulo do eixo y
+        ylim = c(0, 60),         # limites do eixo y
+        col = c("blue", "orange", "green"))  # cores das barras
+
+# Gráfico de pizza (setores)
+pie(tabela,
+    col = c("red", "green", "blue"))  # cores dos setores
