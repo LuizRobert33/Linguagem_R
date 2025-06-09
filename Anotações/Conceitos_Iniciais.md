@@ -25,7 +25,7 @@ b <- 5
 a + b      # Soma
 a > b      # Maior que (TRUE)
 a == b     # Igual (FALSE)
-```
+``` 
 ## 🏗️ Tipos de Dados
 Numérico: 1, 5.6, -3
 
