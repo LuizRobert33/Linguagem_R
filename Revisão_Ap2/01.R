@@ -4,6 +4,8 @@ desvio <- 5          # desvio padrão populacional
 n <- 36              # tamanho da amostra
 z <- 1.96            # valor crítico para 95% de confiança
 
+## o valor de 1.96 e descoberto apos o calculo da qnorm(0.975) que e 95% + 2.5% de cada lado(mas  a gente so usa esse valor 1 vez)
+
 # Cálculo do erro padrão
 erro_padrao <- desvio / sqrt(n)
 
