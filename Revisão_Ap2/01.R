@@ -1,3 +1,4 @@
+# A
 # Dados fornecidos
 media <- 150         # média da amostra
 desvio <- 5          # desvio padrão populacional
@@ -15,3 +16,14 @@ limite_superior <- media + z * erro_padrao
 
 # Resultado
 cat("Intervalo de confiança de 95%: [", limite_inferior, ",", limite_superior, "]\n")
+
+# (B) Cálculo do tamanho da amostra para erro de 0.98
+# Formula do erro maximo
+#E <- z * (sigma / sqrt(n))
+#E
+
+z <- 1.96
+E <- 0.98
+n_necessario <- (z * desvio_padrao / E)^2
+n_necessario  # Deve dar 100
+
